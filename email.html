@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+  <h2>Send Demo Email</h2>
+  <form action="https://formsubmit.co/info@arkizard.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" placeholder="Message" required></textarea><br>
+    
+    <!-- Optional: to disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Optional: redirect after success -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
+    
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
